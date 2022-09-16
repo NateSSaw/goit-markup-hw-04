@@ -127,6 +127,7 @@ header {
     margin-left: 50px;
 }
 
+
 .header-email,
 .header-tel {
     display: block;
@@ -152,9 +153,17 @@ header {
 /* main */
 
 .hero {
+    max-width: 1600px;
+    min-height: 605px;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: var(--section-background-color);
 }
 
@@ -256,8 +265,34 @@ header {
     margin-left: 30px;
 }
 
+.features .item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 29px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bg-staff-color);
+}
+
+.item.antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.item.clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.item.computer::before {
+    background-image: url(../images/computer.svg);
+}
+
+.item.astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}
+
 .features .title {
-    margin-top: 0;
     margin-bottom: 10px;
     color: var(--title-text-color);
 
