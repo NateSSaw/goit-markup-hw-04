@@ -129,21 +129,16 @@ header {
     margin-left: 50px;
 }
 
-.header-contacts .icon {
-    fill: var(--icon-header-color);
-}
-
-.header-contacts .icon:hover {
-    fill: var(--accent-color);
-}
 
 .header-email,
 .header-tel {
     display: block;
+    align-items: flex-end;
     padding-top: 32px;
     padding-bottom: 32px;
 
     color: var(--primary-text-color);
+    fill: var(--icon-header-color);
 
     font-weight: 500;
     line-height: 1.14;
@@ -157,6 +152,7 @@ header {
 .header-tel:hover,
 .header-tel:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* main */
@@ -619,6 +615,10 @@ address .contacts {
     
 }
 
+.projects .cards:hover,
+.projects .cards:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .cards img {
     display: block;
