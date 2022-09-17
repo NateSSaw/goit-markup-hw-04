@@ -29,7 +29,6 @@
     --border-header-color: #ECECEC;
     --icon-header-color: #757575;
     --icon-social-first: #afb1b8;
-    --border-clients-color: #AFB1B8;
 }
 
 
@@ -281,7 +280,7 @@ header {
     align-items: center;
     width: 270px;
     height: 120px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     background-color: var(--bg-staff-color);
 }
 
@@ -395,12 +394,13 @@ header {
 
 .social-media {
     display: flex;
-    width: 270px;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
-.social-media .social {
-    fill: var(--icon-social-first);
+.social-media .icons:not(:last-child) {
+    margin-right: 10px;
 }
 
 .social-media .link-icon {
@@ -410,19 +410,17 @@ header {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    
-    
+    fill: var(--icon-social-first);
 }
+
 
 .social-media .link-icon:hover,
 .social-media .link-icon:focus {
-    background-color: var(--accent-color);   
-}
-
-.social-media .social:hover,
-.social-media .social:focus {
+    background-color: var(--accent-color);
     fill: var(--focus-color);
 }
+
+
 
 .container.logo-clients {
     padding-top: 94px;
@@ -432,11 +430,17 @@ header {
 
 .logo-clients .clients {
     display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .clients li {
     gap: 30px;
+    
 }
 
+.clients .company-logo:not(:last-child) {
+    margin-right: 30px;
+}
 
 .clients .logo-client {
     display: flex;
@@ -444,13 +448,11 @@ header {
     align-items: center;
     width: 170px;
     height: 92px;
-    border: 1px solid var(--border-clients-color);
+    border: 1px solid var(--icon-social-first);
     border-radius: 4px;
+    fill: var(--icon-social-first);
 }
 
-.clients .logo-client:not(last-child) {
-    margin-right: 30px;
-}
 
 .clients .logo-client:focus,
 .clients .logo-client:hover {
@@ -464,6 +466,10 @@ footer {
     background-color: var(--section-background-color);
 }
 
+footer .container {
+    display: flex;
+    align-items: baseline;
+}
 .container .logo-footer {
     display: inline-block;
     margin-bottom: 20px;
@@ -504,6 +510,46 @@ address .contacts {
 .contacts .telephone {
     color: var(--mail-tel-footer-color);
     text-decoration: none;
+}
+
+.block-social {
+    margin-left: 70px;
+}
+
+.block-social .social-title {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--focus-color);
+}
+
+.footer-social {
+    display: flex;
+    width: 206px;
+    
+}
+.footer-social .icons:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-social .link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social .link-icon:hover,
+.footer-social .link-icon:focus {
+    background-color: var(--accent-color);
 }
 
 /* Стилі Портфоліо */
