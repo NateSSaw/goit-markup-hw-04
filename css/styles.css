@@ -132,8 +132,9 @@ header {
 
 .header-email,
 .header-tel {
-    display: block;
-    align-items: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
 
