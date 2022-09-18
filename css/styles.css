@@ -453,7 +453,7 @@ header {
 
 .clients .logo-client:focus,
 .clients .logo-client:hover {
-    border: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
     fill: var(--accent-color)
 }
 
